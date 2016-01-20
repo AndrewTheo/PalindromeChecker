@@ -23,12 +23,11 @@ public boolean palindrome(String word)
 
   for(int i=0; i<word.length(); i++)
   {
-    if((word.substring(i,i+1).equals("!")) || (word.substring(i,i+1).equals("'")) || (word.substring(i,i+1).equals(",")) ||(word.substring(i,i+1).equals(" ")))
+    if(Character.isLetter((word.charAt(i))) == false)
     {
-      
+
     }
     else{
-
       ssTest = ssTest + word.substring(i,i+1);
       ssTest = ssTest.toLowerCase();
     }
